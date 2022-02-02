@@ -8,3 +8,13 @@ function arrayPlusArray(arr1, arr2) {  // функция для сложения
   }
   return summ; 
 }
+
+function positiveSum(arr) {		// функция для сложения положительных элементов массива
+  var summPos = 0;
+  for ( let i = 0; i < arr.length; i++){
+    if (arr[i] > 0){
+      summPos += arr[i];
+    }
+  }
+  return summPos
+}
