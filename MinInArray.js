@@ -6,3 +6,23 @@ var min = arr[0];
      		}
     }
 console.log(min); // Выводим минимальное значение из массива
+
+// Добавляем функции на поиск мин и макс значения
+
+var min = function(list){
+    for (let i = 0; i < list.length; i++){
+      if (list [0] >= list[i]){
+      list [0] = list [i];
+      }
+    }
+    return list[0];
+}
+
+var max = function(list){
+      for (let i = 0; i < list.length; i++){
+        if (list [0] <= list[i]){
+        list [0] = list [i];
+        }
+    }
+    return list[0];
+}
