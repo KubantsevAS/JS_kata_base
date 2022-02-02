@@ -5,4 +5,4 @@ var min = arr[0];
      		min = arr[i]
      		}
     }
-console.log(min);
+console.log(min); // Выводим минимальное значение из массива
